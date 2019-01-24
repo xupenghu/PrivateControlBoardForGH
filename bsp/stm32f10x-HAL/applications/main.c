@@ -20,6 +20,7 @@ int main(void)
     //外设初始化
 	led_init();
     OLED_Init();
+	relay_init();
     rt_thread_idle_sethook(OLED_Refresh_Gram);  //利用空闲钩子函数刷新oled显示
     OLED_ShowString(0,0,"  MainControl  ",16);
     OLED_ShowString(0,16,"distance:      mm",12);
