@@ -11,7 +11,10 @@
 #ifndef u32
 #define  u32 uint32_t
 #endif
-   	   		   
+
+#define IIC_SCL_PIN	21	
+#define IIC_SDA_PIN 22  
+
 //IO方向设置
 #define SDA_IN()  {rt_pin_mode(IIC_SDA_PIN, PIN_MODE_INPUT);}	//PB9输入模式
 #define SDA_OUT() {rt_pin_mode(IIC_SDA_PIN, PIN_MODE_OUTPUT);}//PB9输出模式
@@ -20,8 +23,7 @@
 #define IIC_SDA    PBout(11) //SDA	 
 #define READ_SDA   PBin(11)  //输入SDA 
 
-#define IIC_SCL_PIN	21	
-#define IIC_SDA_PIN 22
+
 
 
 
