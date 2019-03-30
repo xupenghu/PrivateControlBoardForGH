@@ -5,10 +5,11 @@
 #include <drivers/pin.h>
 
 
-#define RELAY_SHORT_PIN 46
-#define RELAY_MIDDLE_PIN 45
-#define RELAY_LONG_PIN 43
-#define RELAY_PEND_PIN 42
+#define S1_PIN 46
+#define S2_PIN 45
+#define S3_PIN 43
+#define S4_PIN 42
+#define S5_PIN 41
 
 typedef enum _e_switch_line{
     NONE_SWITCH,
